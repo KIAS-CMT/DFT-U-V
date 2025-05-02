@@ -8,6 +8,6 @@ When you use this patch file to perform first-principles calculations with self-
 
 [2] W. Yang, S.-H. Jhi, S.-H. Lee, and Y.-W. Son, "Ab initio study of lattice dynamics of group IV semiconductors using pseudohbyrid functionals for extended Hubbard interactions", Phys. Rev. B 104, 104313 (2021).
 
-If you use a subroutine for spin-orbit interaction with extended Hubbard interactions, cite following one paper together with two papers above. 
+If you use a subroutine for spin-orbit interaction with extended Hubbard interactions, cite the following one paper together with two papers above. 
 
 [3] W. Yang and Y.-W. Son, " Effects of self-consistent extended Hubbard interactions and spin-orbit couplings on energy bands of semiconductors and topological insulators", Phys. Rev. B 110, 155133 (2024).
