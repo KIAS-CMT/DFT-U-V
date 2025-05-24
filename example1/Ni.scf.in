@@ -1,0 +1,36 @@
+ &control
+   calculation  = 'scf',
+   restart_mode = 'from_scratch',
+   pseudo_dir   = '~/pseudo/pseudodojo/nc_sr/',
+   outdir       = './temp',
+   prefix       = 'Ni'
+   verbosity    = 'high',
+   disk_io      = 'low',
+   tprnfor      = .true.,
+   tstress      = .true.,
+ 
+ /
+ &system
+   ibrav = 2, celldm(1) = 6.48, nat=1, ntyp = 1, 
+   ecutwfc = 100, 
+   occupations = 'smearing', smearing = 'mv', degauss = 0.02,
+   nspin = 2,
+   starting_magnetization(1) = 0.0,
+    lacbn0 = .true.,  acbn0_type = 2, lda_plus_v = .true., ehub_nn_distance = 3.0, ehub_pot_fix = .false., ehub_conv_thr = 1.0D-08, ehub_mixing = 0.7
+   ehub_l_choice(1,3) = 1,
+
+/
+ &electrons
+   diagonalization = 'david',
+   diago_full_acc  = .true.,
+   conv_thr        =  1.0D-8,
+   mixing_beta     =  0.7,
+   startingwfc     = 'random',
+ /
+ ATOMIC_SPECIES
+   Ni   0.000   Ni.upf
+ ATOMIC_POSITIONS crystal
+   Ni   0.000   0.000   0.000
+ K_POINTS automatic
+   15  15  15  0  0  0
+ 
