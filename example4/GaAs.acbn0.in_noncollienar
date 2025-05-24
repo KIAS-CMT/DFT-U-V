@@ -1,0 +1,39 @@
+ &control
+   calculation  = 'scf',
+   restart_mode = 'from_scratch',
+   prefix       = 'GaAs',
+   pseudo_dir   = '//scratch/yspacefirst/pseudo/pseudodojo/standard/PBEsol/nc-fr/',
+   outdir       = './temp',
+   verbosity    = 'high'
+   disk_io      = 'low',
+/
+ &system
+   ibrav = 2, celldm(1) = 10.6997074 
+   nat = 2, ntyp = 2, 
+   ecutwfc = 350, 
+   occupations = 'smearing', smearing = 'gauss', degauss = 0.01,
+   noncolin = .true., lspinorb = .true.
+   starting_magnetization(1) = 0.0,
+   lacbn0 = .true. acbn0_type = 2, lda_plus_v = .true., 
+   ehub_nn_distance = 4.4, ehub_pot_fix = .false., ehub_conv_thr = 1.0D-10, ehub_mixing = 0.7
+    ehub_l_choice(1,1) = 1,    ehub_l_choice(1,2) = 1
+    ehub_l_choice(2,1) = 1,    ehub_l_choice(2,2) = 1
+    remove_ehub_u(1,1) = 0,    remove_ehub_u(2,1) = 0
+ /
+ &electrons
+   diagonalization = 'david',
+   diago_full_acc  = .true.,
+   conv_thr        =  1.0D-15,
+   mixing_beta     =  0.7,
+   startingwfc     = 'random',
+ /
+ ATOMIC_SPECIES
+   Ga   0.000   Ga.upf
+   As   0.000   As.upf
+ ATOMIC_POSITIONS crystal
+   Ga   0.000   0.000   0.000
+   As   0.250   0.250   0.250
+ K_POINTS automatic
+   15 15 15   0  0  0
+
+
