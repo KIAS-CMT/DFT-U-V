@@ -1,0 +1,49 @@
+ &control
+   calculation  = 'vc-relax',
+   restart_mode = 'from_scratch',
+   prefix       = 'GaAs',
+   pseudo_dir   = '~/pseudo/pseudodojo/nc_sr/',
+   outdir       = './temp',
+   verbosity    = 'high'
+   disk_io      = 'low',
+/
+ &system
+   ibrav = 0, 
+   nat = 2, ntyp = 2, nbnd = 24,
+   ecutwfc = 100, 
+   occupations = 'smearing', smearing = 'gauss', degauss = 0.01,
+   nspin = 2,
+   starting_magnetization(1) = 0.0,
+   lacbn0 = .true., acbn0_type = 2, lda_plus_v = .true., ehub_pot_fix = .false.,
+   ehub_nn_distance = 3.0, ehub_conv_thr = 1.0D-08, ehub_mixing = 0.8,
+   ehub_l_choice(1,1) = 1,  ehub_l_choice(1,2) = 1
+   ehub_l_choice(2,1) = 1,  ehub_l_choice(2,2) = 1
+   remove_ehub_u(1,1) = 0,  remove_ehub_u(2,1) = 0
+
+ /
+ &electrons
+   diagonalization = 'david',
+   diago_full_acc  = .true.,
+   conv_thr        =  1.0D-8,
+   mixing_beta     =  0.7,
+   startingwfc     = 'random',
+ /
+ &ions
+    ion_dynamics = 'bfgs',
+ / 
+ &cell
+    cell_dynamics = 'bfgs',
+/
+ ATOMIC_SPECIES
+   Ga   0.000   Ga.upf
+   As   0.000   As.upf
+ ATOMIC_POSITIONS crystal
+   Ga   0.000   0.000   0.000
+   As   0.250   0.250   0.250
+ K_POINTS automatic
+   15  15  15  0  0  0
+ CELL_PARAMETERS bohr
+   5.321941 5.321941 0.000000
+   0.000000 5.321941 5.321941
+   5.321941 0.000000 5.321941 
+
