@@ -1,4 +1,4 @@
-# Self-Consistent DFT+U+V Using the Extended ACBN0 Functional
+# Self-Consistent DFT+U+V Based on Hartree-Fock Approach
 
 This repository provides a DFT+U+V patch for [Quantum Espresso](https://www.quantum-espresso.org/) version 7.3, enabling `pw.x` to calculate on-site *U* and inter-site *V* parameters self-consistently using the extended ACBN0 (Agapito-Curtarolo-Buongiorno Nardelli) functional.
 
