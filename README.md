@@ -8,7 +8,7 @@ The original idea for the self-consistent on-site U parameters was adopted from 
 - Luis A. Agapito, Stefano Curtarolo, and Marco Buongiorno Nardelli, *Reformulation of DFT+𝑈 as a Pseudohybrid Hubbard Density Functional for Accelerated Materials Discovery*, Phys. Rev. X **5**, 011006 (2015).
 
 The extension of ACBN0 pseudo-hybrid functional of U to the inter-site Hubbard interaction of V is developed by Sang-Hoon Lee and Young-Woo Son:
--  S.-H. Lee and Y.-W. Son, *First-principles approach with a pseudohybrid density functional for extended Hubbard interactions*, Phys. Rev. Research **2**, 0434210 (2020). 
+-  S.-H. Lee and Y.-W. Son, *First-principles approach with a pseudohybrid density functional for extended Hubbard interactions*, Phys. Rev. Research **2**, 0434210 (2020).
 
 When you use this patch file to perform first-principles calculations with self-consistent extended Hubbard interactions and then, obtain results, cite following two papers:
 
