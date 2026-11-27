@@ -2,7 +2,7 @@
 
 This repository provides a DFT+U+V patch for [Quantum Espresso](https://www.quantum-espresso.org/) version 7.3, enabling `pw.x` to calculate on-site *U* and inter-site *V* parameters self-consistently using the extended ACBN0 (Agapito-Curtarolo-Buongiorno Nardelli) functional.
 
-The contributors of this project are Sang-Hoon Lee (https://github.com/lshgoal) and Wooil Yang (https://github.com/spacefirst).
+The contributors of this project are Dr. Sang-Hoon Lee (https://github.com/lshgoal) and Dr. Wooil Yang (https://github.com/spacefirst).
 
 The original idea for the self-consistent on-site U parameters was adopted from the following paper:
 - Luis A. Agapito, Stefano Curtarolo, and Marco Buongiorno Nardelli, *Reformulation of DFT+𝑈 as a Pseudohybrid Hubbard Density Functional for Accelerated Materials Discovery*, Phys. Rev. X **5**, 011006 (2015).
