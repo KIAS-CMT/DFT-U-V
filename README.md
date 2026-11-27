@@ -1,4 +1,4 @@
-# Self-Consistent DFT+U+V Based on Hartree-Fock Approach
+# Self-Consistent DFT+U+V Based on a Hartree-Fock-based Approach
 
 This repository provides a DFT+U+V patch for [Quantum Espresso](https://www.quantum-espresso.org/) version 7.3, enabling `pw.x` to calculate on-site *U* and inter-site *V* parameters self-consistently using the extended ACBN0 (Agapito-Curtarolo-Buongiorno Nardelli) functional.
 
@@ -19,6 +19,7 @@ When you use this patch file to perform first-principles calculations with self-
 If you use a subroutine for spin-orbit interaction with extended Hubbard interactions, cite the following one paper together with two papers above. 
 
 [3] W. Yang and Y.-W. Son, *Effects of self-consistent extended Hubbard interactions and spin-orbit couplings on energy bands of semiconductors and topological insulators*, Phys. Rev. B **110**, 155133 (2024).
+
 
 ## Quantum ESPRESSO Patch  
 
