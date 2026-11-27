@@ -5,20 +5,20 @@ This repository provides a DFT+U+V patch for [Quantum Espresso](https://www.quan
 The contributors of this project are [Dr. Sang-Hoon Lee](https://github.com/lshgoal) and [Dr. Wooil Yang](https://github.com/spacefirst).
 
 The original idea for the self-consistent on-site U parameters was adopted from the following paper:
-- Luis A. Agapito, Stefano Curtarolo, and Marco Buongiorno Nardelli, *Reformulation of DFT+𝑈 as a Pseudohybrid Hubbard Density Functional for Accelerated Materials Discovery*, Phys. Rev. X **5**, 011006 (2015).
+- Luis A. Agapito, Stefano Curtarolo, and Marco Buongiorno Nardelli, *Reformulation of DFT+𝑈 as a Pseudohybrid Hubbard Density Functional for Accelerated Materials Discovery*, [Phys. Rev. X **5**, 011006 (2015)](https://doi.org/10.1103/PhysRevX.5.011006).
 
 The extension of ACBN0 pseudo-hybrid functional of U to the inter-site Hubbard interaction of V is developed by Sang-Hoon Lee and Young-Woo Son:
--  S.-H. Lee and Y.-W. Son, *First-principles approach with a pseudohybrid density functional for extended Hubbard interactions*, Phys. Rev. Research **2**, 0434210 (2020).
+-  S.-H. Lee and Y.-W. Son, *First-principles approach with a pseudohybrid density functional for extended Hubbard interactions*, [Phys. Rev. Research **2**, 0434210 (2020)](https://doi.org/10.1103/PhysRevResearch.2.043410).
 
 When you use this patch file to perform first-principles calculations with self-consistent extended Hubbard interactions and then, obtain results, cite following two papers:
 
-[1] S.-H. Lee and Y.-W. Son, *First-principles approach with a pseudohybrid density functional for extended Hubbard interactions*, Phys. Rev. Research **2**, 0434210 (2020)
+[1] S.-H. Lee and Y.-W. Son, *First-principles approach with a pseudohybrid density functional for extended Hubbard interactions*, [Phys. Rev. Research **2**, 0434210 (2020)](https://doi.org/10.1103/PhysRevResearch.2.043410)
 
-[2] W. Yang, S.-H. Jhi, S.-H. Lee, and Y.-W. Son, *Ab initio study of lattice dynamics of group IV semiconductors using pseudohbyrid functionals for extended Hubbard interactions*, Phys. Rev. B **104**, 104313 (2021).
+[2] W. Yang, S.-H. Jhi, S.-H. Lee, and Y.-W. Son, *Ab initio study of lattice dynamics of group IV semiconductors using pseudohbyrid functionals for extended Hubbard interactions*, [Phys. Rev. B **104**, 104313 (2021)](https://doi.org/10.1103/PhysRevB.104.104313).
 
 If you use a subroutine for spin-orbit interaction with extended Hubbard interactions, cite the following one paper together with two papers above. 
 
-[3] W. Yang and Y.-W. Son, *Effects of self-consistent extended Hubbard interactions and spin-orbit couplings on energy bands of semiconductors and topological insulators*, Phys. Rev. B **110**, 155133 (2024).
+[3] W. Yang and Y.-W. Son, *Effects of self-consistent extended Hubbard interactions and spin-orbit couplings on energy bands of semiconductors and topological insulators*, [Phys. Rev. B **110**, 155133 (2024)](https://doi.org/10.1103/PhysRevB.110.155133).
 
 
 ## Quantum ESPRESSO Patch  
